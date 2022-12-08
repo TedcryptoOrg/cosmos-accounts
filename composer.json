@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "autoload": {
       "psr-4": {
-        "TedcryptoOrg\\CosmosAccounts": "src/"
+        "TedcryptoOrg\\CosmosAccounts\\": "src/"
       }
     },
     "autoload-dev": {
