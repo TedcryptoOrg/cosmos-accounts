@@ -29,11 +29,5 @@ jobs:
         - name: Install dependencies
           run: composer install --prefer-dist --no-progress --no-suggest
         - name: Run tests
-          run: vendor/bin/phpunit
-          # Test phpstan
-        - name: Run tests
-          run: vendor/bin/phpstan analyse --level=7 app
-          # Test php-cs-fixer
-        - name: Run tests
-          run: vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
+          run: vendor/bin/phpunit -c phpunit.xml.dist
 
